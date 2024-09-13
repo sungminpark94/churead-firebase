@@ -5,7 +5,14 @@ const LoginButton = () => {
 
   // view
   // TODO: type props로 받아서 할당
-  return <button type="submit">Login</button>;
+  return (
+    <button
+      type="submit"
+      className="bg-white p-5 text-gray-600 w-full rounded-xl"
+    >
+      Login
+    </button>
+  );
 };
 
 export default LoginButton;

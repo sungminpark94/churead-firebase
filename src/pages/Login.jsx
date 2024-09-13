@@ -13,7 +13,7 @@ const Login = () => {
 
   // view
   return (
-    <div>
+    <div className="text-center px-6">
       {/* <h2>Login</h2> */}
       {/* <button type="button" onClick={goToHome}>
         Home화면으로 이동
@@ -21,20 +21,22 @@ const Login = () => {
       {/* <Link to={"/"} style={{ color: "red" }} className="link">
         Home화면으로 이동
       </Link> */}
-      <h1>
+      <h1 className="flex justify-center">
         <img src="./images/logo.svg" alt="churead로고" />
       </h1>
-      <h3 className="text-red">Churead에서 소통해보세요</h3>
+      <h3 className="text-red font-bold text-base py-6">
+        Churead에서 소통해보세요
+      </h3>
       {/* START: 폼 영역 */}
-      <form id="login-form">
+      <form id="login-form" className="text-center flex flex-col gap-2">
         <InputField />
         <InputField />
         <LoginButton />
       </form>
       {/* END: 폼 영역 */}
-      <div>
+      <div className="flex justify-center gap-1 py-6">
         <p>계정이 없으신가요?</p>
-        <Link>가입하기</Link>
+        <Link className="text-blue-400">가입하기</Link>
       </div>
       {/* START: 소셜 로그인 영역 */}
       <LoginButton />
