@@ -29,9 +29,9 @@ const Login = () => {
       </h3>
       {/* START: 폼 영역 */}
       <form id="login-form" className="text-center flex flex-col gap-2">
-        <InputField />
-        <InputField />
-        <LoginButton />
+        <InputField type="text" field="email" />
+        <InputField type="password" field="password" />
+        <LoginButton category="login" />
       </form>
       {/* END: 폼 영역 */}
       <div className="flex justify-center gap-1 py-6">
@@ -39,7 +39,7 @@ const Login = () => {
         <Link className="text-blue-400">가입하기</Link>
       </div>
       {/* START: 소셜 로그인 영역 */}
-      <LoginButton />
+      <LoginButton category="socialLogin" />
       {/* END: 소셜 로그인 영역 */}
     </div>
   );
