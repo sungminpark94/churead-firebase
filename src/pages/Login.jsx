@@ -35,9 +35,14 @@ const Login = () => {
       </form>
       {/* END: 폼 영역 */}
       <div className="flex justify-center gap-1 py-6">
-        <p>계정이 없으신가요?</p>
-        <Link className="text-blue-400">가입하기</Link>
+        <p className="text-churead-gray-600">계정이 없으신가요?</p>
+        <Link className="text-churead-blue">가입하기</Link>
       </div>
+      <p className="text-gray-500 text-sm relative mb-4">
+        {" "}
+        <i className="block w-full h-[1px] bg-churead-gray-300 bg-opacity-15 absolute top-1/2 transform -translate-y-1/2" />{" "}
+        <span className="bg-churead-black relative z-10 px-2"> or </span>{" "}
+      </p>
       {/* START: 소셜 로그인 영역 */}
       <LoginButton category="socialLogin" />
       {/* END: 소셜 로그인 영역 */}
