@@ -16,9 +16,9 @@ const PostInput = () => {
           </div>
           <div className="pt-1 text-sm">
             <textarea
-              rows={9}
+              rows={4}
               placeholder="문구를 작성하세요"
-              className="w-full placeholder-churead-gray-300 placeholder-opacity-60 text-churead-gray-600 bg-transparent outline-none resize-none"
+              className="w-full placeholder-churead-gray-300 placeholder-opacity-60 text-churead-gray-400 bg-transparent outline-none resize-none"
             />
           </div>
         </div>
