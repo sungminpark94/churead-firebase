@@ -1,7 +1,6 @@
 import React from "react";
 
 const LoginButton = ({ category }) => {
-  console.log("🚀 category:", category);
   // logic
   // category: 'login', 'socialLogin'
 

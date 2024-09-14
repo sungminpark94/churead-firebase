@@ -4,7 +4,7 @@ import Login from "./pages/Login";
 
 function App() {
   return (
-    <div className="bg-gray-900 h-full text-white">
+    <div className="bg-gray-900 h-full text-white overflow-auto">
       <div className="max-w-[572px] mx-auto h-full">
         <div className="h-full flex flex-col justify-center">
           <BrowserRouter>
