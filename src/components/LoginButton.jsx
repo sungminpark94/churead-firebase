@@ -1,6 +1,6 @@
 import React from "react";
 
-const LoginButton = ({ category }) => {
+const LoginButton = ({ category, text }) => {
   // logic
   // category: 'login', 'socialLogin'
 
@@ -17,7 +17,7 @@ const LoginButton = ({ category }) => {
       {category === "socialLogin" && (
         <img src="./images/google.svg" alt="google로고" />
       )}
-      {category === "login" ? "Login" : "Continue with Google"}
+      {text}
     </button>
   );
 };

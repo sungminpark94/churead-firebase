@@ -31,12 +31,14 @@ const Login = () => {
       <form id="login-form" className="text-center flex flex-col gap-2">
         <InputField type="text" field="email" />
         <InputField type="password" field="password" />
-        <LoginButton category="login" />
+        <LoginButton category="login" text="Login" />
       </form>
       {/* END: 폼 영역 */}
       <div className="flex justify-center gap-1 py-6">
         <p className="text-churead-gray-600">계정이 없으신가요?</p>
-        <Link className="text-churead-blue">가입하기</Link>
+        <Link to="/sign-in" className="text-churead-blue">
+          가입하기
+        </Link>
       </div>
       <p className="text-gray-500 text-sm relative mb-4">
         {" "}
@@ -44,7 +46,7 @@ const Login = () => {
         <span className="bg-churead-black relative z-10 px-2"> or </span>{" "}
       </p>
       {/* START: 소셜 로그인 영역 */}
-      <LoginButton category="socialLogin" />
+      <LoginButton category="socialLogin" text="Continue with Google" />
       {/* END: 소셜 로그인 영역 */}
     </div>
   );
