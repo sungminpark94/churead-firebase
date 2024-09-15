@@ -1,6 +1,6 @@
 import React from "react";
-import Header from "../components/Header";
-import Nav from "../components/Nav";
+import Header from "../components/layout/Header";
+import Nav from "../components/layout/Nav";
 import FeedItem from "../components/FeedItem";
 
 const Home = () => {

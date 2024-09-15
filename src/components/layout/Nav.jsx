@@ -1,4 +1,5 @@
 import React from "react";
+import { Link } from "react-router-dom";
 
 const Nav = () => {
   // logic
@@ -6,15 +7,15 @@ const Nav = () => {
   // view
   return (
     <div className="flex justify-center fixed bottom-0 bg-churead-gray-800 w-full">
-      <button type="button" className="p-6 active:bg-churead-blue">
+      <Link to="/" className="p-6">
         <img src="./images/icon-home.svg" alt="Home으로 가기" />
-      </button>
-      <button type="button" className="p-6 active:bg-churead-blue">
+      </Link>
+      <Link to="/post" className="p-6">
         <img src="./images/icon-home.svg" alt="Home으로 가기" />
-      </button>
-      <button type="button" className="p-6 active:bg-churead-blue">
+      </Link>
+      <Link to="/profile" className="p-6">
         <img src="./images/icon-home.svg" alt="Home으로 가기" />
-      </button>
+      </Link>
     </div>
   );
 };
