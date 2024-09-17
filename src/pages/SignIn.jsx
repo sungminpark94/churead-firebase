@@ -3,6 +3,7 @@ import InputField from "../components/InputField";
 import LoginButton from "../components/LoginButton";
 import { Link } from "react-router-dom";
 
+// TODO: 파일면 SignUp으로 바꾸기, path도 바꾸기
 const SignIn = () => {
   // logic
 
