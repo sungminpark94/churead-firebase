@@ -22,13 +22,13 @@ const Nav = () => {
           </Link>
         </li>
         <li>
-          <Link to="/" className="block p-6">
+          <Link to="/post" className="block p-6">
             <RiEditBoxLine size={"28px"} />
             {/* <RiEditBoxFill size={"28px"} /> */}
           </Link>
         </li>
         <li>
-          <Link to="/" className="block p-6">
+          <Link to="/profile" className="block p-6">
             <FaRegUser size={"24px"} />
             {/* <FaUser size={"24px"} /> */}
           </Link>

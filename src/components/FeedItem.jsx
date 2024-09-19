@@ -1,5 +1,5 @@
 import React from "react";
-import { RiPencilFill } from "react-icons/ri";
+import { RiHeartLine, RiPencilFill } from "react-icons/ri";
 import { FaTrash } from "react-icons/fa6";
 
 const FeedItem = () => {
@@ -32,10 +32,12 @@ const FeedItem = () => {
             effective for getting around the city, especially during NYFW.
           </p>
           {/* START: 좋아요 영역 */}
-          <div className="flex items-center">
+          <div className="flex items-center gap-1">
             <button type="button" className="text-churead-gray-400">
-              좋아요 아이콘 <span>5</span>
+              <RiHeartLine />
+              {/* <RiHeartFill color="red" /> */}
             </button>
+            <span>5</span>
           </div>
           {/* END: 좋아요 영역 */}
         </div>
