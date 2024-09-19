@@ -1,4 +1,6 @@
 import React from "react";
+import { RiPencilFill } from "react-icons/ri";
+import { FaTrash } from "react-icons/fa6";
 
 const FeedItem = () => {
   return (
@@ -14,12 +16,12 @@ const FeedItem = () => {
           <div className="flex items-center">
             <span className="font-bold">chutzrit</span>
             {/* START: 수정, 삭제 버튼 영역 */}
-            <div className="ml-auto">
+            <div className="ml-auto flex gap-1">
               <button type="button" className="max-w-6 p-1">
-                <img src="./images/icon-home.svg" alt="" />
+                <RiPencilFill size={"18px"} />
               </button>
               <button type="button" className="max-w-6 p-1">
-                <img src="./images/icon-home.svg" alt="" />
+                <FaTrash size={"14px"} />
               </button>
             </div>
             {/* END: 수정, 삭제 버튼 영역 */}
