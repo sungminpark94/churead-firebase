@@ -55,7 +55,7 @@ const Nav = () => {
         {navList.map((nav) => (
           <li key={nav.id}>
             <Link to={nav.pathname} className="block p-6">
-              {/* 사용자가 현재 머무르는 페이지 pathname과 요소의 pathname 같인지 체크하여 activeIcon 보여주기 */}
+              {/* 사용자가 현재 머무르는 페이지 pathname과 요소의 pathname 같은지 체크하여 activeIcon 보여주기 */}
               {location.pathname === nav.pathname ? nav.activeIcon : nav.icon}
             </Link>
           </li>
