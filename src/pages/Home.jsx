@@ -1,12 +1,30 @@
-import React, { useState } from "react";
+import React, { useEffect, useState } from "react";
 import Header from "../components/layout/Header";
 import Nav from "../components/layout/Nav";
 import FeedItem from "../components/FeedItem";
 import { initialFeedList } from "../data/response";
 
-const Home = () => {
+const Home = ({ churead }) => {
   // logic
   const [feedList, setFeedList] = useState(initialFeedList);
+
+  console.log("churead", churead);
+
+  // 진입시 딱 한번 실행
+  useEffect(() => {
+    if (!churead) return;
+    const newFeed = {
+      id: feedList.length + 1,
+      userName: "anonymous",
+      userProfileImage:
+        "https://www.gravatar.com/avatar/00000000000000000000000000000000?d=mp&f=y",
+      churead: churead,
+      likeCount: 0,
+    };
+    // feedList에 객체 추가
+    setFeedList([newFeed, ...feedList]);
+    // eslint-disable-next-line react-hooks/exhaustive-deps
+  }, []);
 
   // view
   return (
