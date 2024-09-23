@@ -1,6 +1,11 @@
 import React, { useState } from "react";
 
-const PostInput = ({ defaultValue, userName, userProfileImage, onChange }) => {
+const PostInput = ({
+  defaultValue = "",
+  userName = "anonymous",
+  userProfileImage = "https://www.gravatar.com/avatar/00000000000000000000000000000000?d=mp&f=y",
+  onChange,
+}) => {
   // logic
   const [value, setValue] = useState(defaultValue);
 
