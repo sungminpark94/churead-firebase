@@ -2,7 +2,7 @@ import React from "react";
 import { RiHeartLine, RiPencilFill } from "react-icons/ri";
 import { FaTrash } from "react-icons/fa6";
 
-const FeedItem = ({ data, onDelete }) => {
+const FeedItem = ({ data, onEdit, onDelete }) => {
   // logic
   const { userName, userProfileImage, churead, likeCount } = data;
 
@@ -30,7 +30,11 @@ const FeedItem = ({ data, onDelete }) => {
             <span className="font-bold">{userName}</span>
             {/* START: 수정, 삭제 버튼 영역 */}
             <div className="ml-auto flex gap-1">
-              <button type="button" className="max-w-6 p-1">
+              <button
+                type="button"
+                className="max-w-6 p-1"
+                onClick={() => onEdit(data)}
+              >
                 <RiPencilFill size={"18px"} />
               </button>
               <button
