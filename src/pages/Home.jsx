@@ -6,6 +6,7 @@ import { initialFeedList } from "../data/response";
 import { useNavigate } from "react-router-dom";
 
 const Home = ({ churead, editedItem, onEdit }) => {
+  console.log("🚀 ~ Home ~ churead:", churead);
   // logic
   const history = useNavigate();
 
@@ -28,6 +29,7 @@ const Home = ({ churead, editedItem, onEdit }) => {
    */
 
   const handleEdit = (data) => {
+    // 인자, argument
     onEdit(data); // 부모에게 수정할 객체 아이템 넘겨주기
     history("/edit"); // edit페이지로 이동
   };

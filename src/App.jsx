@@ -14,6 +14,7 @@ function App() {
   const [editedItem, setEditedItem] = useState(null);
 
   const handlePost = (churead) => {
+    // 매개변수, parameter
     setChuread(churead);
   };
 
