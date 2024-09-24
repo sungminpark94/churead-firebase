@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from "react";
+import React, { useState } from "react";
 import InputField from "../components/InputField";
 import LoginButton from "../components/LoginButton";
 import { Link } from "react-router-dom";
@@ -81,7 +81,7 @@ const Login = () => {
         {/* END: 폼 영역 */}
         <div className="flex justify-center gap-1 py-6">
           <p className="text-churead-gray-600">계정이 없으신가요?</p>
-          <Link to="/sign-in" className="text-churead-blue">
+          <Link to="/sign-up" className="text-churead-blue">
             가입하기
           </Link>
         </div>
